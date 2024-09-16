@@ -1,0 +1,9 @@
+{
+    "RAM": {
+
+    },
+    "ROM": {
+        "Trish graphic start": "0xa1e86",
+        "Trish graphic end": "0xac86f"
+    }
+}

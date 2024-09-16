@@ -1,0 +1,395 @@
+{| border="1" class="prettytable"
+!RAM offset||Description
+|-
+| $00068e
+|	In a level ?
+* $0f - in a level
+|-
+|$0006aa
+|	Mastery:
+* $00=Blake's Hotel(Отель блейка)
+* $01=Ha Ha Carnival(Карнавал Ха-Ха)
+|-
+|$0006ac
+|	Area ID:
+	---Blake's Hotel---
+* $01 - Unused?
+* $02 - The Basement
+* $03 - The Mystery Machine
+* $04 - The Dungeon
+* $05 - The Dungeon
+* $06 - The Mine
+* $07 - The Maze
+* $08 - The Maze
+* $09 - The Hallway
+* $0A - Outside the Hotel
+* $0B - Outside the Hotel
+* $0C - Outside the Hotel
+* $0D - The Cafe
+* $0E - The Gardener's Room
+* $0F - The Kitchen
+* $10 - The Lobby
+* $11 - The Office
+* $12 - The Shaft
+* $13 - The Pond
+* $14 - The Tomb
+* $15 - Across the River
+* $16 - The Lobby
+
+	---Ha Ha Carnival---
+* $01 - Unused?
+* $02 - The Ferris Wheel
+* $03 - The Front Lot
+* $04 - Madame Zelda
+* $05 - The Bumper Cars
+* $06 - The Bumper Cars
+* $07 - The Bumper Cars
+* $08 - The Roller Coaster
+* $09 - The Hall of Mirrors
+* $0A - The Pond
+* $0B - The Front Office
+* $0C - The Front Lot
+* $0D - The Back Lot
+* $0E - The Boathouse
+* $0F - The Bungee Jump
+* $10 - The Hammer Game
+* $11 - Dressing Room
+* $12 - The Diving Bell
+* $13 - The Game Tent
+* $14 - The Diving Bell
+* $15 - The Haunted House
+* $16 - The Bungee Jump
+* $17 - The Fun House
+* $18 - The Boardwalk
+* $19 - Orbit
+* $1A - The Mystery Machine
+* $1B - The Ferris Wheel
+* $1C - The Pond
+* $1D - ZOINKS! Evil Clown!
+* $1E - The Roller Coaster
+* $1F - Crane Game
+|-
+|$0006ae
+|	Selected item on a level ?
+|-
+|$0006b4
+|	Interacting Object ID?
+|-
+|$0006b6
+|	Item iteract with ?
+|-
+|$0006be
+|	Action Type ID
+* $00=None
+* $01=Pull
+* $02=Take
+* $03=Open
+* $04=Shut
+* $05=Use
+* $06=Give
+* $07=Push
+* $08=Talk
+* $09=Eat
+* $0A=Look
+* $0B=None
+|-
+|$0006c0
+|	Action ID
+* $00=None
+* $01=Pull
+* $02=Take
+* $03=Open
+* $04=Shut
+* $05=Use
+* $06=Give
+* $07=Push
+* $08=Talk
+* $09=Eat
+* $0A=Look
+|-
+|$0006dc
+|	Cursor PosX 16 bit
+|-
+|$0006de
+|	Cursor PosY 16 bit
+|-
+|$000876
+|	Level state ?
+* $c0 - in progress
+* $80 - level end
+|-
+|$0009dc
+|
+* Bit 3 - Text Box Active/Shaggy Frozen?
+|-
+|$0009dd
+|
+* Bit 6 - In-Game?
+* Bit 7 - Text Box Active/Shaggy Frozen?
+|-
+|$0009ea
+|
+* Bit 1 - Pause/Title Screen?
+|-
+|$0009ec
+|	Debug mode:
+* Bit 1 - Debug menu ON
+* Bit 0 - On a level ?
+|-
+|$000a1e
+|	Inventory item 1 - 16 bit:
+* $ffff - None
+* $5c - Scissors
+* $60 - Heater
+* $52 - Air Freshener
+* $64 - Chili
+* $45 - Shovel
+* $57 - Bed Spring
+* $79 - Pot
+* $78 - Pot o' Water
+|-
+|$000a98
+|	Bumper Cars Health (Shaggy & Scoob)
+* $3F = Max
+|-
+|$000a9a
+|	Bumper Cars Health (Clown)
+* $3F = Max
+|-
+|$000abe
+|
+* Bit 0 - Shaggy invisible ?
+|-
+|$000ac1
+|	Credits Scroll, Ha Ha Carnival 01>00
+|-
+|$000ad0
+|	Text Box Size
+|-
+|$0011c2
+|	Shaggy X Coord
+|-
+|$0011c6
+|	Shaggy Y Coord
+|-
+|$0011d0
+|	Sound Test
+|-
+|$0011d2
+|	Gardener's Room
+|-
+|$001317
+|	level end ?
+|-
+|$0015c9
+|	Fireplace state:
+* $10 - with fire
+* $00 - without fire
+|-
+|$0018ee
+|	Snowman state:
+* $0c - exists
+* $00 - nope
+|-
+|$001908
+|	Snowmans shovel state:
+* $0c - with shovel
+* $01 - without shovel
+|-
+|$0019ec
+|	The Gardener's Room door opened state from Hallway ?
+* $3f - opened
+|-
+|$0019f8
+|	Doors puzzle state in The Hallway:
+* bit0...bit5 - doors opened state
+|-
+|$001a6e
+|	The Gardener's Room door opened state from room?
+* $7a - opened
+|-
+|$001a7a
+|	Decreasing timer 16 bit ?
+|-
+|$001ae2
+|	Spring jumping timer 16 bit 
+* $258 - max
+|-
+|$001b5e
+|	4bit obj on screen, scissors.
+|-
+|$001bc6
+|	object on screen
+* Bit 4 - heather
+|-
+|$001d9a
+| Frozen bell left by snowman state:
+* $0c - frozen bell is left after snowman breaking
+* $01 - frozen bell picked up
+|-
+|$002a00
+|	Event Flag
+---Blake's Hotel---
+* Bit 0 - Bellhop Gave Goblet
+
+---Ha Ha Carnival---
+* Bit 0 - Took Dart
+* Bit 3 - Took Paint Brush
+* Bit 7 - Took Spark Plug
+|-
+|$002a01
+|	Event Flag
+---Blake's Hotel---
+* Bit 1 - Baited Hook With Medallion
+
+---Ha Ha Carnival---
+* Bit 1 - Sent Clown to His Gruesome Fate
+* Bit 7 - Defeated Clown in Bumper Cars
+|-
+|$002a02
+|	Event Flag
+---Blake's Hotel---
+* Bit 0 - Vent Cover Removed
+* Bit 2 - Took Soda Tab
+* Bit 7 - Got Key
+
+---Ha Ha Carnival---
+* Bit 2 - Took Water Pistol
+* Bit 7 - Got Bolts
+|-
+|$002a03
+|	Event Flag
+---Blake's Hotel---
+* Bit 0 - Took Scissors
+* Bit 1 - Took Heater
+* Bit 2 - Used Heater in Extension Cord
+* Bit 7 - Chili Can Filled With Termites
+
+---Ha Ha Carnival---
+* Bit 0 - Took Magnet
+* Bit 1 - Gave Balancing Bear the Teddy Bear
+* Bit 2 - Took Ball
+* Bit 5 - Took Inky
+* Bit 6 - Took Treasure
+* Bit 7 - Took Coupon
+|-
+|$002a04
+|	Event Flag
+---Blake's Hotel---
+* Bit 1 - Removed Snow From Boards
+* Bit 6 - Took Poison Oak
+* Bit 7 - Took Snowman's Shovel?
+
+---Ha Ha Carnival---
+* Bit 1 - Took Mummy Bandages
+* Bit 2 - Rescued the Gang
+* Bit 3 - Ending?
+* Bit 5 - Lured Clown to Cage
+|-
+|$002a05
+|	Event Flag
+---Blake's Hotel---
+* Bit 1 - Took Bottle of Oil
+* Bit 2 - Took Battery
+* Bit 3 - Took Screwdriver
+* Bit 4 - Opened Secret Passage
+* Bit 6 - Took Medallion
+* Bit 7 - Took Rope
+
+---Ha Ha Carnival---
+* Bit 0 - Took Sign
+* Bit 2 - Planted Modified Sign
+* Bit 3 - Took Taffy
+* Bit 7 - Took Bottle
+|-
+|$002a06
+|	Event Flag
+---Blake's Hotel---
+* Bit 0 - Took Frozen Bell
+
+---Ha Ha Carnival---
+* Bit 0 - Activated Bumper Car Engine
+* Bit 1 - Repaired Bumper Car Engine
+* Bit 5 - Beat Hammer Game
+* Bit 6 - Scared Clown in House of Mirrors
+|-
+|$002a07
+|	Event Flag
+Event Flag
+---Blake's Hotel---
+* Bit 0 - Killed Snowman
+* Bit 3 - Fished Up Doll
+
+---Ha Ha Carnival---
+* Bit 1 - Saw Evil Clown Thru Game Tent Window
+* Bit 2 - Killed Madame Zelda
+* Bit 5 - Saw The Gang Thru Game Tent Window
+|-
+|$002a08
+|	Event Flag
+---Blake's Hotel---
+* Bit 0 - spring jumping ?
+* Bit 1 - Finished Intro
+* Bit 2 - Uncle Blake is Gone!
+
+---Ha Ha Carnival---
+* Bit 0 - Won Water Pistol
+* Bit 4 - Rescued Carnival Manager
+|-
+|$002a09
+|	Event Flag
+---Blake's Hotel---
+* Bit 3 - Extension Cord Plugged In
+
+---Ha Ha Carnival---
+* Bit 2 - Roller Coaster Track Damaged (Bit Drops Upon Repair)
+* Bit 5 - Won Dart Game
+|-
+|$002a0a
+|	Event Flag
+---Blake's Hotel---
+* Bit 0 - Tomb Opened
+* Bit 2 - Eavesdropped on Meeting
+* Bit 3 - Gardener's Room Unlocked
+
+---Ha Ha Carnival---
+|-
+|$002a0b
+|	Event Flag
+---Ha Ha Carnival---
+* Bit 5 - Finished Intro?
+|-
+|$002a0c
+|	Event Flag
+---Blake's Hotel---
+* Bit 2 - Snipped Rope
+
+---Ha Ha Carnival---
+|-
+|$002a0d
+|	Event Flag
+---Blake's Hotel---
+* Bit 5 - Rescued Uncle Blake
+
+---Ha Ha Carnival---
+|-
+|$002a0e
+|	Event Flag
+---Blake's Hotel---
+* Bit 2 - Woke Bear Up
+* Bit 5 - Gave Bear the Itches
+
+---Ha Ha Carnival---
+|-
+|$002a0f
+|	Doors closed bits, can move through - 0 - can move
+---Blake's Hotel---
+* Bit 0 - The Office from the Hall
+* Bit 1 - Outside the Hotel
+* Bit 2 - The Gardener's Room
+* Bit 3 - Left Drawer in the Gardener's Room
+* Bit 4 - Right Drawer in the Gardener's Room
+
+---Ha Ha Carnival---
+|-
+|}

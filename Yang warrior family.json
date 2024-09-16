@@ -1,0 +1,118 @@
+{
+    "RAM" : [
+        {
+
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x71C1",
+            "toHex":"0x0",
+            "color":"orange",
+            "values":{
+                
+            },
+            "caption":"X первого игрока"
+        },
+        {
+
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x71C3",
+            "toHex":"0x0",
+            "color":"orange",
+            "values":{
+                
+            },
+            "caption":"Y первого игрока"
+        },
+        {
+
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0xFEF7",
+            "toHex":"0x0",
+            "color":"orange",
+            "values":{
+                "0xAC" : "Menu"
+            },
+            "caption":"экраны в демо и меню?"
+        },
+        {
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x71CD",
+            "toHex":"0x0",
+            "color":"orange",
+            "values":{
+                "0x0A" : "max"
+            },
+            "caption":"попытки, после 0x0A идут спрайты мусора"
+        },
+        {
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x71CC",
+            "toHex":"0x0",
+            "color":"orange",
+            "values":{
+                "0x18" : "max"
+            },
+            "caption":"жизни первого игрока"
+        },
+        {
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x724C",
+            "toHex":"0x0",
+            "color":"orange",
+            "value":{
+                "0x18" : "max"
+            },
+            "captions":"жизни первого врага"
+        },
+        {
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x728C",
+            "toHex":"0x0",
+            "color":"orange",
+            "value":{
+                "0x18" : "max"
+            },
+            "caption":"жизни второго врага"
+        },
+        {
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x72CC",
+            "toHex":"0x0",
+            "color":"orange",
+            "value":{
+                "0x18" : "max"
+            },
+            "caption":"жизни третьего врага"
+        },
+        {
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x730C",
+            "toHex":"0x0",
+            "color":"orange",
+            "values":{
+                "0x18" : "max"
+            },
+            "caption":"жизни четвертого врага"
+        }
+    ],
+    "ROM" : [
+        {
+            "path":"",
+            "fromDec":0,
+            "toDec":0,
+            "fromHex":"0x1beca",
+            "toHex":"0x0",
+            "color":"orange",
+            "caption":"title sprite data"
+        }
+        
+    ]
+}
