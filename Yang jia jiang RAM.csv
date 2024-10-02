@@ -1,0 +1,19 @@
+ Address|Size|Description  
+ -------|----|-----------  
+    71C1|   2|first player X  
+    71C3|   2|first player Y  
+    71CC|   1|first player lifes  
+                * 18-Max 
+    71CD|   1|first player Lives  
+                * 0A-Max 
+    724C|   1|first enemy lifes  
+                * 18-Max 
+    728C|   1|second enemy lifes  
+                * 18-Max  
+    72CC|   1|third enemy lifes
+                * 18-Max"
+    730C|   1|forth enemy lifes
+                * 18-Max"
+    FEF7|   1|demo and menu screen?  
+                * AC-Menu
+

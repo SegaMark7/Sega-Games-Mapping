@@ -1,6 +1,6 @@
-"Offset "|" Size "|" Description"
-"fc830-fc92f"|"255 bytes"|"enemy and bosses names"
-"fdb90-fe22f"|"1692 bytes"|"cutscenes text"
+Offset      |Size|Description
+fc830-fc92f |255 |enemy and bosses names
+fdb90-fe22f |1692|cutscenes text
 ||
 ||
 ||
