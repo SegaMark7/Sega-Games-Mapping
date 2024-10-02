@@ -1,0 +1,112 @@
+ Address |Note
+ --------|---------------------------
+ 0x00000a|[16-Bits] Flag Cheat Active
+             0x0 = No
+             0xffff = Yes
+ 0x00000c|Live in Main Menu:
+             0x0 = 3
+             0x1 = 5
+             0x2 = 7
+ 0x000010|Continues in Main Menu:
+             0x0 = 2
+             0x1 = 4
+             0x2 = 6
+ 0x000014|Arthurs in Main Menu
+             0x0 = 2
+             0x1 = 3
+             0x2 = 4
+ 0x00050e|[16-Bits] Screen ID at Intro
+             0x1dd8 = Sega Logo
+             0x1ddc = Game Developed Info
+             0x1de8 = Fox Interactive
+             0x1dec = Software Creatins
+             0x1df8 = Title Menu
+             0x1e04 = Presenting Demo
+             0x1e24 = Main Menu
+             0x357e = Main Cheat Screen
+             0x35f4 = Sub Plots Cheat Screen
+             0x3664 = Story 2 Cheat Screen
+             0x362c = Story 3 Cheat Screen
+             0x369c = Story 1 Cheat Screen
+             0xe13c = Loading Screen
+             0xe166 = Gameplay
+ 0x0008f4|[16-Bits] Pause Flag
+ 0x000900|Level ID
+ 0x000954|Counter: Chairface's Laser Objects Destroyed
+ 0x000992|Player Lifes
+ 0x000996|Continues
+ 0x000998|Arthur's
+ 0x0009a0|[32-Bits] Score
+ 0x0009b8|[16-Bits] Companion Flag
+ 0x0009c2|
+ 0x000bec|[16-Bits] Moon Visor Progress:
+             0x00 = \"\"
+             0xe0 = \"C\"
+             0x1a0 = \"CH\"
+             0x260 = \"CHA\"
+             0x320 = \"CHAI\"
+             0x3e0 = \"CHAIR\"
+             0x4a0 = \"CHAIRF\"
+             0x560 = \"CHAIRFA\"
+             0x620 = \"CHAIRFAC\"
+             0x6e0 = \"CHAIRFACE\"
+ 0x000bee|Amount of Letters Written
+ 0x000bf0|[16-Bits] Chairface Write Letter Timer:
+             0xffff = Writing
+ 0x000d74|Input Bitflags:
+             Bit0 = Up
+             Bit1 = Down
+             Bit2 = Left
+             Bit3 = Right
+             Bit4 = Start
+             Bit5 = Jump
+             Bit6 = Punch
+             Bit7 = Kick
+ 0x004224|[16-Bits] Player Sprite
+ 0x004228|[16-Bits] Player X Position
+ 0x00422c|[16-Bits] Player Y Position
+ 0x004278|[16-Bits] Player Animation
+ 0x0042b4|[16-Bits] Pointer 1 to Enemy Stats
+             +0 = [16-Bits] Sprite ID
+             +4 = [16-Bits] X Position
+             +C = [16-Bits] Y Position
+             +54 = [16-Bits] Animation ID
+             +98 = [16-Bits] Life
+ 0x0042b8|[16-Bits] Pointer 2 to Enemy Stats
+             +0 = [16-Bits] Sprite ID
+             +4 = [16-Bits] X Position
+             +C = [16-Bits] Y Position
+             +54 = [16-Bits] Animation ID
+             +98 = [16-Bits] Life
+ 0x0042bc|Player Health
+ 0x004ec0|[16-Bits] Pointer 3 to Enemy Stats
+             +0 = [16-Bits] Sprite ID
+             +4 = [16-Bits] X Position
+             +C = [16-Bits] Y Position
+             +54 = [16-Bits] Animation ID
+             +98 = [16-Bits] Life
+ 0x004ec4|[16-Bits] Pointer 4 to Enemy Stats
+             +0 = [16-Bits] Sprite ID
+             +4 = [16-Bits] X Position
+             +C = [16-Bits] Y Position
+             +54 = [16-Bits] Animation ID
+             +98 = [16-Bits] Life
+ 0x004ecc|[16-Bits] Pointer 5 to Enemy Stats
+             +0 = [16-Bits] Sprite ID
+             +4 = [16-Bits] X Position
+             +C = [16-Bits] Y Position
+             +54 = [16-Bits] Animation ID
+             +98 = [16-Bits] Life
+ 0x004ed0|[16-Bits] Pointer 6 to Enemy Stats
+             +0 = [16-Bits] Sprite ID
+             +4 = [16-Bits] X Position
+             +C = [16-Bits] Y Position
+             +54 = [16-Bits] Animation ID
+             +98 = [16-Bits] Life
+ 0x005014|Digit Score X0.000.000
+ 0x005016|Digit Score X.000.000
+ 0x005018|Digit Score X00.000
+ 0x00501a|Digit Score X0.000
+ 0x00501e|Digit Score X00
+ 0x005020|Digit Score X0
+ 0x005022|Digit Score X
