@@ -1,0 +1,14 @@
+     Address|Size|Note
+ -----------|----|----------------------
+        f2f0|   2|player x
+        f2f4|   2|player y
+        f24a|   1|player lives
+        f311|   1|player lifes
+                   * 7f-Max
+                   * 80-Break the game
+        f3fc|   2|layer A x?
+        f3fe|   2|layer B x?
+        9db8|   2|player upper half x
+        9db8|   2|player lower half x
+        b810|   2|level x?
+        b812|   2|level y?
