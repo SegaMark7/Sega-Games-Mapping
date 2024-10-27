@@ -1,0 +1,9 @@
+  Address|Size         |Note
+ 0x000012|8bit unsigned|Transformation capsule count. 
+                         In-game display caps at 9 if this value is greater than 9.
+ 0x000888|8bit unsigned|Hulk lives remaining
+ 0x0008a5|  8bit signed|Health
+                         Max value:   0x67
+                         Ultra Hulk:    0x48
+                         Super Hulk:  0x30
+                         Bruce Banner:  0x07

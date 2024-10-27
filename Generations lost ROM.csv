@@ -1,15 +1,16 @@
-     Address|Size|Note
- -----------|----|----------------------
-        4f20|  53|text = MANUFACTURED FOR PLAY ON THE SEGA GENESIS SYSTEM. (Dont know where used)
-       15efc| 145|title down text = GENERATIONS LOST [ AND ] 1993,1994
-                              TIME WARNER INTERACTIVE INC. ALL
-                              RIGHTS RESERVED. SEGA[ AND GENESIS ARE
-                              TRADEMARKS OF SEGA ENTERPRISES LTD.
-       15feb|  53|start game text = MANUFACTURED FOR PLAY ON THE SEGA GENESIS SYSTEM.
-        5ac0|  10|text = START GAME
-   5acd-5ad3|   7|text = OPTIONS
-        7034|   1|write 4e71 to activate "debugger"          
- ae102-aec9b|2970|cutscene, title, options font and something else because any level dont start
- daff8-db434|1085|letter font
-       12fc0|   1|lives
+     Address| Size|Note
+ -----------|-----|----------------------
+        4f20|   53|text = MANUFACTURED FOR PLAY ON THE SEGA GENESIS SYSTEM. (Dont know where used)
+        5ac0|   10|text = START GAME
+   5acd-5ad3|    7|text = OPTIONS
+        7034|    1|write 4e71 to activate "debugger"          
+       12fc0|    1|lives
+       15efc|  145|title down text = GENERATIONS LOST [ AND ] 1993,1994
+                               TIME WARNER INTERACTIVE INC. ALL
+                               RIGHTS RESERVED. SEGA[ AND GENESIS ARE
+                               TRADEMARKS OF SEGA ENTERPRISES LTD.
+ 15feb-16020|   53|start game text = MANUFACTURED FOR PLAY ON THE SEGA GENESIS SYSTEM.
+ ae102-aec9b| 2970|cutscene, title, options font and something else because any level dont start
+ daff8-db434| 1085|letter font
+ eaec4-fffff|86332|unused data, needed for alignment, can be removed
  

@@ -1,14 +1,18 @@
      Address|Size|Note
  -----------|----|----------------------
+        f2b5|   1|if chenge title screen restart
         f2f0|   2|player x
         f2f4|   2|player y
         f24a|   1|player lives
         f311|   1|player lifes
                    * 7f-Max
-                   * 80-Break the game
+                   * equel or more than 80-Break the game
         f3fc|   2|layer A x?
         f3fe|   2|layer B x?
+        f4c0|   4|if not `BOOT`(42 4f 4f 54) text game will infinity loop 
         9db8|   2|player upper half x
         9db8|   2|player lower half x
         b810|   2|level x?
         b812|   2|level y?
+        bcaa|   1|timer counter
+        bcab|   1|timer to demo and to next screen to title

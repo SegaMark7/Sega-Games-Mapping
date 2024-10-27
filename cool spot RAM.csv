@@ -1,0 +1,91 @@
+ Address |Size|Note
+ 0x000002|   1|0xf2 = cheat input (debug)
+               0xcc = level skip
+ 0x000712|   1|Lower4 - Time - 10 Seconds
+ 0x000713|   1|Lower4 - Time - Minutes
+ 0x000715|   1|Lower4 - Time - Seconds
+ 0x000748|   2|I believe this is a background state. It is consistent on levels that share backgrounds, and has unique values for the title screen as well as game over.
+                 bb04=Game Over (and high score screen)
+                 bc84=Title Screen
+                 b7a4=Continue Screen
+                 baa4=debug David Perry
+                 b2c4=debug menu
+                 b244=credits
+ 0x000770|   1|Difficulty
+                 00 - Easy
+                 01 - Normal
+                 02 - Difficult
+ 0x000771|   1|0xff = infinite lives ON
+ 0x000774|   1|0xff = freezeability ON
+ 0x000777|   1|Level ID:
+                 02=shell shock > 
+                 00=pier pressure > 
+                 04=off the wall > 
+                 06=wading around >  
+                 07=toying around > 
+                 0a=radical rails > 
+                 08=wound up > 
+                 09=loco motive > 
+                 05=back to the wall > 
+                 01=dock and roll > 03=surf patrol
+                 Bonus Levels:
+                 0b=U
+                 0c=N
+                 0d=C
+                 0e=O
+                 0f=L
+                 10=A
+ 0x000778|   1|Score 100000s
+ 0x00077a|   1|Score 1000s
+ 0x00077b|   1|Score 10000s
+ 0x00077c|   1|Score 10s
+ 0x00077d|   1|Score 100s
+ 0x00077f|   1|Score 1s
+ 0x000788|   1|Lower4 - % Cool 0X0
+ 0x000789|   1|Lower4 - % Cool X00
+ 0x00078b|   1|Lower4 - % Cool 00X
+ 0x00078d|   1|Lower4 - Lives
+ 0x0007b8|   1| Not 100% on its primary purpose, but it's 05 in-game and 04 at credits. Tends to be 00 during loads.
+ 0x00f4ed|   1|Health
+                 07=full
+                 00=dead
+ 0x00f4f0|   1|UNCOLA temporary storage. This increases when you grab the letter in the actual Bonus Stage. It actually stores the continues in its neighbor to the right, 00xf4f1 after clearing the Bonus Stage, one at a time.
+                 01 = U
+                 02 = N
+                 04 = C
+                 08 = O
+                 10 = L
+                 20 = A
+ 
+                 [Single Bits]
+                 Bit 0 = U
+                 Bit 1 = N
+                 Bit 2 = C
+                 Bit 3 = O
+                 Bit 4 = L
+                 Bit 5 = A
+ 0x00f4f1|   1|UNCOLA permanent storage. See the neighbor to the left 00xf4f0 for the moment Spot grabs a letter.
+                 01 = U
+                 02 = N
+                 04 = C
+                 08 = O
+                 10 = L
+                 20 = A
+                 3F= All Letters Saved
+ 
+                 [Single Bits]
+                 Bit 0 = U
+                 Bit 1 = N
+                 Bit 2 = C
+                 Bit 3 = O
+                 Bit 4 = L
+                 Bit 5 = A
+ 0x00f522|   1|Counter for the jingle easter egg. Starts at 00, goes up by 1 for every spot collected (except arrows). Resets back to 00 after a few seconds (tied to countdown on 0x00f525
+ 0x00f525|   1|Jingle countdown (see 0x00f522) Starts at $fe and counts down to 00.
+ 0x00f579|   1|Tied to a countdown timer of some sort. Confirmed to be used at least for Bonus Stage 1, after collecting all collectibles; game will lock the player from controlling Spot and this seems to be counting down until the next screen. It's normally just 00, but when last point is collected it counts down from b3 and back to 00 again, where the level fades out and transitions. Needs more research.
+ 0x00f5a7|   1|This is similar to 00xf579. It's 00 before changing to 03 the moment Spot collects the final point in a bonus stage, and then goes back to 00 when the level ends. Needs more research.
+ 0x00f5cc|   1|Score tens
+ 0x00f5e1|   1|Health - 7 Max
+ 0x00f5e2|   1|Health - 7 Max
+ 
+ 
