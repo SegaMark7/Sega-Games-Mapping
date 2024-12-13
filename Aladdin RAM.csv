@@ -1,0 +1,105 @@
+  Address|  Size|Note
+ 0x007264|16-bit|Screen IDs [1] 
+                 0x9DA8 = Transition to Debug Menu 
+                 0x8FD2 = Debug Menu 
+                 0x96B2 = Sega Screen 
+                 0x97D2 = Virgin Screen 
+                 0x9812 = Main Menu 
+                 0x9832 = Bonus Screen 
+                 0x9AD2 = Level Name Screen 
+                 0x9D6A = Level End Screen 
+                 0x9E00 = Ending sequence before 'The End' shows up 
+                 0x9E80 = 'The End' shows before fading out and Credits start rolling
+ 0x007268|16-bit|Screen IDs [2] 
+                 0x8FF2 = Debug Menu 
+                 0x96D2 = Sega Screen 
+                 0x9752 = Virgin Screen 
+                 0x97F2 = Main Menu 
+                 0x99F2 = Ending 
+                 0x9E20 = Credits 
+                 0x9EA0 = Credits
+ 0x007272| 8-bit|Debug Option: Map View Mode 0x00 = Off 0xFF = On
+ 0x007278| 8-bit|Succesful Cheat Inputs Example Scenario: [Debug Menu] 
+                  0x3A = Initial State 
+                  0x3E = A,C 
+                  0x42 = A,C,A,C 
+                  0x46 = A,C,A,C,A,C 
+                  0x4A = A,C,A,C,A,C,A,C 
+                  0x4C = A,C,A,C,A,C,A,C,B 
+                  0x4E = A,C,A,C,A,C,A,C,B,B 
+                  0x50 = A,C,A,C,A,C,A,C,B,B,B (Only B remains now) [Level Skip] 
+                  0x28 = Initial State 0x2A = A 
+                  0x2C = A,B 0x2E = A,B,B 
+                  0x30 = A,B,B,A 0x32 = A,B,B,A,A 
+                  0x34 = A,B,B,A,A,B 
+                  0x36 = A,B,B,A,A,B,B (Only A remains now) Level Skip has at least 2 different cheats,
+                         shortest amount of inputs is being detected for a pause lock.
+ 0x0072be|      |apples
+ 0x007df4|      |'last interaction? screen mode?': 
+                  52/32=virginlogo, 
+                  72=entered desert, 
+                  80=credits, 
+                  b2=segalogo, 
+                  d2=normal, 
+                  ea=instructions, 
+                  f2=dungeon
+ 0x007e1f| 8-bit|set to =0x00 when paused, 0xff when game is active
+ 0x007e20|      |Difficulty, 0=practice, 1=normal, 2=difficult
+ 0x007e21| 8-bit|Debug Option: Cheat Mode 
+                 0x00 = Off 
+                 0xFF = On
+ 0x007e24| 8-bit|Debug Option: Freezeability 0x00 = Off 0xFF = On
+ 0x007e27|      |Level ID 
+                0x01=Agrabah Market 
+                0x02=Abu in Agrabah I 
+                0x03=The Desert 
+                0x00=Agrabah Rooftops 
+                0x04=Sultan's Dungeon 
+                0x05=Cave of Wonders 
+                0x06=Abu in the Cave 
+                0x07=The Escape 
+                0x08=Rug Ride 
+                0x09=Inside the Lamp 
+                0x0A=Sultan's Palace 
+                0x0C=Iago Fight 
+                0x0B=Jafar's Palace
+ 0x007e28|  4-bit|Score (hundred thousand)
+ 0x007e2a|  4-bit|Score (thousand)
+ 0x007e2b|  4-bit|Score (ten thousand)
+ 0x007e2c|  4-bit|Score (ten)
+ 0x007e2d|  4-bit|Score (hundred)
+ 0x007e2f|  4-bit|Score (unit)
+ 0x007e3d|  4-bit|Num Lifes
+ 0x007e3e|  4-bit|Num Wishes (Continues)
+ 0x007e42| 16-bit|X-Axis
+ 0x007e44| 16-bit|Y-Axis
+ 0x007e82|       |Genie's Machine Item ID : 01=extra life; 02=gem; 03=apple; 04=jafar
+ 0x007e83|       |Genie's Machine Item ID : 01=extra life; 02=gem; 03=apple; 04=jafar
+ 0x007f06|       |Iago; Jafar 1st form=120a; Jafar 2nd form=1114
+ 0x00821e|  8-bit|Boss Gazeem 's Health
+ 0x008368|  8-bit|Boss Health
+ 0x00ef90|       |Cutscene Counter
+ 0x00efae|  8-bit|Hovered Option whilst on Debug Menu 
+                  0x16 = Cheat Mode 
+                  0x17 = Level Select 
+                  0x18 = Freezability 
+                  0x19 = Map View Mode
+ 0x00efca|       |Cutscene Frame Counter
+ 0x00efd2|       |Cutscene Counter 3
+ 0x00efe0| Lower4|Apples (1s)
+ 0x00efe1| Lower4|Apples (10s)
+ 0x00efe2| Lower4|Gems (1s)
+ 0x00efe3| Lower4|Gems (10s)
+ 0x00effa|  8-bit|Aladdin's Max Health
+ 0x00effb|  8-bit|Aladdin's Health
+ 0x00f002|  8-bit|Num Genie Token
+ 0x00f0e6|  8-bit|Bonus Stage : 01= Abu hitted
+ 0x00f0e8|  8-bit|Level State 
+                  0x00 = Active in Level 
+                  0xFF = Level Complete / Nice Try Screen reached
+ 0x00f124|  8-bit|Boss Shiva Monkey Num Hitted
+ 0x00f159|  8-bit|Pause 0x00 = Unpaused 0xFF = Paused
+ 0x00f15a|       |
+ 0x00f177|  8-bit|Obtained Abu Minigame Token 0x00 = Not Obtained 0xFF = Obtained
+ 0x00f57d|  8-bit|Demo Mode = 1
+ 
