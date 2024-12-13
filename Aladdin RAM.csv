@@ -49,7 +49,7 @@
                  0x00 = Off 
                  0xFF = On
  0x007e24| 8-bit|Debug Option: Freezeability 0x00 = Off 0xFF = On
- 0x007e27|      |Level ID 
+ 0x007e27| 8-bit|Level ID 
                 0x01=Agrabah Market 
                 0x02=Abu in Agrabah I 
                 0x03=The Desert 
@@ -63,6 +63,7 @@
                 0x0A=Sultan's Palace 
                 0x0C=Iago Fight 
                 0x0B=Jafar's Palace
+                0x0D=Give up, Street Rat(unplayable level)                
  0x007e28|  4-bit|Score (hundred thousand)
  0x007e2a|  4-bit|Score (thousand)
  0x007e2b|  4-bit|Score (ten thousand)
@@ -75,8 +76,8 @@
  0x007e44| 16-bit|Y-Axis
  0x007e82|       |Genie's Machine Item ID : 01=extra life; 02=gem; 03=apple; 04=jafar
  0x007e83|       |Genie's Machine Item ID : 01=extra life; 02=gem; 03=apple; 04=jafar
- 0x007f06|       |Iago; Jafar 1st form=120a; Jafar 2nd form=1114
- 0x00821e|  8-bit|Boss Gazeem 's Health
+ 0x007f06| 16-bit|Iago; Jafar 1st form=120a; Jafar 2nd form=1114
+ 0x00821e|  8-bit|Boss Gazeem's Health
  0x008368|  8-bit|Boss Health
  0x00ef90|       |Cutscene Counter
  0x00efae|  8-bit|Hovered Option whilst on Debug Menu 

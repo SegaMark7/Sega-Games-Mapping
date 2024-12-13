@@ -1,0 +1,62 @@
+  Address|size|note
+ 0x00bb81|    |Input
+ 0x00bb82|    |
+ 0x00bdae|    |Boss Encountered Flag? Savage Land, Juggernaut - FFFF > 0001
+ 0x00bdb7|    |
+ 0x00bf4a|    |Text Flag?
+ 0x00bf65|    |X-Men Dead/In-Use Bit 0 - Gambit Bit 1 - Nightcrawler Bit 2 - Wolverine Bit 3 - Cyclops
+ 0x00bf9c|    |Danger Room - 04? Transition - 05? Title Screen/Credits - 08? Ending - 09? In-Level = FF?
+ 0x00bfa0|    |X Screen Lock Coordinates (Right)
+ 0x00bfa2|    |X Screen Lock Coordinates X (Left)
+ 0x00bfa4|    |Y Screen Lock Coordinates (Down)
+ 0x00bfa6|    |Y Screen Lock Coordinates (Up)
+ 0x00bfb0|    |Camera Scroll X
+ 0x00bfb4|    |Camera Scroll Y
+ 0x00bfc4|    |Ending Section ID?
+ 0x00bfce|    |Demo Flag? (02)
+ 0x00bfd0|    |Demo Related
+ 0x00bfd8|    |Danger Room Timer
+ 0x00bfed|    |
+ 0x00c028|    |Danger Room Orb Destroyed Time Extender Destroyed, Danger Room Stage 1
+ 0x00c032|    |
+ 0x00c080|    |Zaladane Health
+ 0x00c09a|    |Crunch Timer 2
+ 0x00c0c3|    |Danger Room Orb Destroyed
+ 0x00c0d0|    |Level End Timer?
+ 0x00c0e4|    |
+ 0x00c0ec|    |
+ 0x00c0f0|    |
+ 0x00c0f4|    |
+ 0x00c0f5|    |
+ 0x00c11b|    |Danger Room Orb Destroyed
+ 0x00c130|    |Juggernaut Health (Savage Land)
+ 0x00c14d|    |
+ 0x00c173|    |Danger Room Orb Destroyed
+ 0x00c254|    |0C Finishes Savage Land?
+ 0x00c255|    |Time Extender Destroyed, Danger Room 2-6
+ 0x00c2ad|    |Danger Room Time Extender Destroyed (Level 1. Better?)
+ 0x00c2ba|    |
+ 0x00c305|    |
+ 0x00c32b|    |Danger Room Orb Destroyed
+ 0x00c389|    |Lilandra Door Unlocked? (Bit 2)
+ 0x00c3db|    |Danger Room Orb Destroyed
+ 0x00c433|    |Danger Room Orb Destroyed
+ 0x00d5e6|    |Current X-Man? (Alt) 0x0A=Cyclops 0x0C=Gambit 0x0D=Nightcrawler 0x0E=Wolverine
+ 0x00d5f8|    |X Coordinates
+ 0x00d5fc|    |Y Coordinates
+ 0x00d618|    |Wolverine Claws? 80 = Off - 84 = On
+ 0x00d62a|16-Bit|Player Life
+ 0x00d62d|      |Current X-Man? 0x00=Wolverine 0x04=Cyclops 0x08=Nightcrawler 0x0C=Gambit
+ 0x00d63a|16-Bit|Mutant Power
+ 0x00d63e|    |X-Man Changes Remaining
+ 0x00d728|    |Backup X-Men Used Bit 0 - Rogue Bit 1 - Archangel Bit 2 - Iceman Bit 3 - Storm
+ 0x00d729|    |Danger Room - FF Levitating by Jean - FF Changing X-Men - FF Summoning Support X-Man - FF
+ 0x00d734|    |Boss Pointer +44 - Boss Health
+ 0x00d74e|    |Difficulty 0xFF00=Amateur 0x0000=Hero 0x00FF=Superhero
+ 0x00d756|    |Bit 2 - Crunch Computer Intact, 0 = computer destroyed, prepared to reset?
+ 0x00d77e|    |485E = Danger Room?
+ 0x00d780|    |Level ID 0x00=Danger Room 0x01=Danger Room 0x02=Danger Room 0x03=Savage Land 0x04=Savage Land 0x05=Shiar Empire 0x06=Excalibur 0x07=Excalibur Lighthouse 0x08=Future Earth 0x09=The Crunch 0x0A=Asteroid M 0x0B=Asteroid M
+ 0x00d782|    |Last Area?
+ 0x00d784|    |Danger Room Timer Stopped - FFFF
+ 0x00d786|    |Cheats Active - FFFF
+    
